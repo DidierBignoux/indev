@@ -3,7 +3,10 @@ import React from "react";
 //Componets
 import Header from "../componets/Header/header";
 import Footer from "../componets/Footer/footer";
-import Brand from "../componets/Brand/brand";
+
+//Section
+import Brand from "../Section/Brand/brand";
+import About from "../Section/About/about";
 
 import MainNavbar from "../componets/Navbars/navbar";
 
@@ -13,6 +16,7 @@ function Home() {
        <MainNavbar />
       <Header />
       <Brand />
+      <About />
      
 
       <Footer />
