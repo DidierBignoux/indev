@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
   return (
@@ -21,10 +22,14 @@ function Footer() {
 							<Link href="#"><i className="fa fa-dribbble"></i><Link />
 							<Link href="#"><i className="fa fa-behance"></i><Link />
 						</div> */}
-              <div className="footer-social">
-              <FontAwesomeIcon icon="coffee" />
 
+              <div className="footer-social">
+                <Link to="/any-url">
+                  <FontAwesomeIcon className='icone' icon={faFacebook} />
+                </Link>
               </div>
+
+
             </div>
           </div>
         </div>
