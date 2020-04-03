@@ -3,9 +3,6 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 //includes
 import "./Assets/css/main.min.css";
-import "./Assets/css/bootstrap.css";
-
-
 
 //Pages
 import Home from "./pages/homePage";
@@ -32,12 +29,8 @@ function App() {
   return (
     <Router>
       <div className="App">
-       
-
         <Route exact path="/" component={Home} />
         <Route exact path="/products" component={Products} />
-
-       
       </div>
     </Router>
   );
