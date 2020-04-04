@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, } from "@fortawesome/free-brands-svg-icons";
+
+// free-brands-svg-icons
 
 function Footer() {
   return (
@@ -25,19 +27,21 @@ function Footer() {
 
               <div className="footer-social">
                 <Link to="/any-url">
-                  <FontAwesomeIcon className='icone' icon={faFacebook} />
+                  <FontAwesomeIcon className="icone" icon={faFacebook} />
                 </Link>
               </div>
-
-
             </div>
           </div>
         </div>
-        {/* <div className="row footer-bottom justify-content-center">
-				<p className="col-lg-8 col-sm-12 footer-text">					
-Copyright  All rights reserved | This template is made with <i className="fa fa-heart-o" aria-hidden="true"></i> by <Link href="https://colorlib.com" target="_blank">Colorlib<Link />
-</p>
-			</div> */}
+        <div className="row footer-bottom justify-content-center">
+          <p className="col-lg-8 col-sm-12 footer-text">
+           Copyright &copy; {(new Date().getFullYear())} All rights reserved | This website is made with 
+          <FontAwesomeIcon className="icone" icon={faFacebook} />
+             by <Link to="/any-url">
+                  <FontAwesomeIcon className="icone" icon={faFacebook} />
+                </Link>
+          </p>
+        </div>
       </div>
     </footer>
   );

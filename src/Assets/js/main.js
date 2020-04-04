@@ -1,6 +1,6 @@
 
 import $ from 'jquery';
-import WOW from 'wow.js';
+// import WOW from 'wow.js';
 
 $(document).ready(function () {
    
@@ -15,7 +15,11 @@ $(document).ready(function () {
     $(".fitscreen").css("height", fitscreen);
 
     //------- Wow JS Initialized --------// 
-    window.WOW = WOW;
+    // window.WOW = WOW;
+
+   
+
+
     //------- Go to Top --------// 
     $(window).on("scroll", function () {
         if ($(this).scrollTop() > 100) {
