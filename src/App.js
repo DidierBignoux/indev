@@ -27,7 +27,7 @@ import "./Assets/js/main.js";
 
 function App() {
   return (
-    <Router>
+    <Router >
       <div className="App">
         <Route exact path="/" component={Home} />
         <Route exact path="/products" component={Products} />

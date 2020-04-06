@@ -1,6 +1,9 @@
 
 import $ from 'jquery';
 // import WOW from 'wow.js';
+// import 'isotope.pkgd.min.js'
+// import './wow'
+
 
 $(document).ready(function () {
    
@@ -72,29 +75,30 @@ $(document).ready(function () {
     //     fixedContentPos: false
     // });
 
-    //------- Filter  js --------//  
-    $(window).on("load", function () {
-        $('.filters ul li').on("click", function () {
-            $('.filters ul li').removeClass('active');
-            $(this).addClass('active');
+    // ------- Filter  js --------//  
 
-            var data = $(this).attr('data-filter');
-            $grid.isotope({
-                filter: data
-            })
-        });
+    // $(window).on("load", function () {
+    //     $('.filters ul li').on("click", function () {
+    //         $('.filters ul li').removeClass('active');
+    //         $(this).addClass('active');
+
+    //         var data = $(this).attr('data-filter');
+    //         $grid.isotope({
+    //             filter: data
+    //         })
+    //     });
 
 
-        if (document.getElementById("work")) {
-            var $grid = $(".grid").isotope({
-                itemSelector: ".all",
-                percentPosition: true,
-                masonry: {
-                    columnWidth: ".all"
-                }
-            })
-        };
-    });
+    //     if (document.getElementById("work")) {
+    //         var $grid = $(".grid").isotope({
+    //             itemSelector: ".all",
+    //             percentPosition: true,
+    //             masonry: {
+    //                 columnWidth: ".all"
+    //             }
+    //         })
+    //     };
+    // });
 
     //------- Accordion  js --------//  
 

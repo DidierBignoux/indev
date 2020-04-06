@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import WOW from 'wowjs';
+// import { WOW } from 'wowjs';
 
 
 class Header extends React.Component { 
@@ -40,7 +40,7 @@ class Header extends React.Component {
                 and Content
                 <span className="developer">Developer</span>
               </div>
-              <Link to="/products" className="primary-btn" data-text="Hire Me">
+              <Link href="/products" className="primary-btn" data-text="Hire Me">
                 <span>H</span>
                 <span>i</span>
                 <span>r</span>
