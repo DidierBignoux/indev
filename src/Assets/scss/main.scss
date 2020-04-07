@@ -1,12 +1,22 @@
+
+/*!
+ * Title : Didier Bignoux Styles
+ * Version : 0.1
+ * Copyright 20120 Twitter, Inc.
+ * Author : Didier Bignoux
+ */
+
 @import "bootstrap/functions";
 @import "bootstrap/variables";
+
+
 
 //
 // Grid mixins
 //
 
 @import "bootstrap/mixins/breakpoints";
-@import "bootstrap";
+
 
 // including variables and mixins
 @import "theme/variables";
@@ -21,3 +31,10 @@
 @import "theme/home";
 @import "theme/pages";
 @import "theme/footer";
+
+
+
+
+
+
+

@@ -1,46 +1,44 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
-// import { WOW } from 'wowjs';
+import ReactWOW from "react-wow";
 
 
-class Header extends React.Component { 
-
-  componentDidMount() {
-    const WOW = require('wow.js');
-    new WOW().init();
-  }
+class Header extends React.Component {
+onClick =() =>{
+  window.location.reload()
+}
   render() {
     return (
       <section className="home-banner-area">
         <div className="container">
           <div className="row fullscreen d-flex align-items-center">
             <div className="banner-content col-lg-6 col-md-12 justify-content-center ">
-              <div
-                className="me wow bounceIn"
-                data-wow-duration="1s"
-                data-wow-delay="1.2s"
+              <ReactWOW animation="bounceIn" duration="1s" delay="1.2s">
+                <div className="me">It's me</div>
+              </ReactWOW>
+              <ReactWOW animation=" fadeInUp" duration="1s" delay="1.7s">
+                <h1>Kenedy Jackson</h1>
+              </ReactWOW>
+
+              <ReactWOW
+              animation="fadeInUp"
+              duration="1s"
+              delay="2.1s"
               >
-                It's me
-              </div>
-              <h1
-                className="wow fadeInUp"
-                data-wow-duration="1s"
-                data-wow-delay="1.7s"
-              >
-                Kenedy Jackson
-              </h1>
               <div
-                className="designation mb-50 wow fadeInUp"
-                data-wow-duration="1s"
-                data-wow-delay="2.1s"
+                className="designation mb-50"                
               >
                 Senior Creative
                 <span className="designer">Designer</span>
                 and Content
                 <span className="developer">Developer</span>
               </div>
-              <Link href="/products" className="primary-btn" data-text="Hire Me">
+
+              </ReactWOW>
+
+          
+              <button className="primary-btn" data-text="Hire Me" onClick={this.onClick}>
                 <span>H</span>
                 <span>i</span>
                 <span>r</span>
@@ -48,7 +46,7 @@ class Header extends React.Component {
                 <span> </span>
                 <span>M</span>
                 <span>e</span>
-              </Link>
+              </button>
             </div>
             <div className="banner-img col-lg-6 col-md-6 align-self-end">
               <img

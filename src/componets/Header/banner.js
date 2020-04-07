@@ -13,8 +13,8 @@ class Banner extends React.Component {
               <h1 className="text-white">{this.props.name}</h1>
               <p className="link-nav">
                 <span className="box">
-                  <Link href="./">Home </Link>
-                  <Link href="./products">Blog</Link>
+                  <Link to ="/">Home </Link>
+                  <Link to ="/products">Blog</Link>
                 </span>
               </p>
             </div>

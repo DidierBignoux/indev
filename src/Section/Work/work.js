@@ -7,10 +7,10 @@ import { Link } from "react-router-dom";
 
 
 class WorkArea extends React.Component {
-  componentDidMount() {
-    const WOW = require("wow.js");
-    new WOW().init();
-  }
+  // componentDidMount() {
+  //   const WOW = require("wow.js");
+  //   new WOW().init();
+  // }
   render() {
     return (
       <section
@@ -64,7 +64,7 @@ class WorkArea extends React.Component {
                     <div className="cat">Client Project</div>
                   </div>                 
                   <Link
-                    href="/products"
+                    to ="/products"
                     className="overlay"
                    
                   ></Link>
@@ -89,7 +89,7 @@ class WorkArea extends React.Component {
                     <div className="cat">Client Project</div>
                   </div>                 
                   <Link
-                    href="/products"
+                    to ="/products"
                     className="overlay"
                    
                   ></Link>
@@ -114,7 +114,7 @@ class WorkArea extends React.Component {
                     <div className="cat">Client Project</div>
                   </div>                 
                   <Link
-                    href="/products"
+                    to ="/products"
                     className="overlay"
                    
                   ></Link>

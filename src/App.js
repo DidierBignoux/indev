@@ -3,10 +3,14 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 //includes
 import "./Assets/css/main.min.css";
+import "./Assets/css/bootstrap/bootstrap-reboot.min.css";
+import "./Assets/css/bootstrap/bootstrap-reboot.min.css";
+import "./Assets/css/bootstrap/bootstrap.min.css";
 
 //Pages
 import Home from "./pages/homePage";
 import Products from "./pages/products";
+import AboutPage from "./pages/aboutPage";
 
 //Javascript
 // import "./Assets/js/vendor/jquery-2.2.4.min.js";
@@ -31,6 +35,7 @@ function App() {
       <div className="App">
         <Route exact path="/" component={Home} />
         <Route exact path="/products" component={Products} />
+        <Route exact path="/about-me" component={AboutPage} />
       </div>
     </Router>
   );

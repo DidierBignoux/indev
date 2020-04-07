@@ -20,27 +20,27 @@ function Brand() {
                 
           >
             <div className="col single-brand">
-              <Link href="#" target="_blank">
+              <Link to ="/#" target="_blank">
                 <img className="mx-auto" src={require("../../Assets/img/brand/b1.png")} alt="" />
               </Link>
             </div>
             <div className="col single-brand">
-              <Link href="#">
+              <Link to ="/#">
                 <img className="mx-auto" src={require("../../Assets/img/brand/b2.png")} alt="" />
               </Link>
             </div>
             <div className="col single-brand">
-              <Link href="#">
+              <Link to ="/#">
                 <img className="mx-auto" src={require("../../Assets/img/brand/b3.png")} alt="" />
               </Link>
             </div>
             <div className="col single-brand">
-              <Link href="#">
+              <Link to ="/#">
                 <img className="mx-auto" src={require("../../Assets/img/brand/b4.png")} alt="" />
               </Link>
             </div>
             <div className="col single-brand">
-              <Link href="#">
+              <Link to ="/#">
                 <img className="mx-auto" src={require("../../Assets/img/brand/b5.png")} alt="" />
               </Link>
             </div>

@@ -1,37 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./styles.css";
-import styled from "styled-components";
+// import styled from "styled-components";
 
 import IsoTopeGrid from "react-isotope";
 
-const Filter = styled("button")`
-  background-color: transparent;
-  border: none;
-  outline: none;
 
-  > input {
-    width: 0;
-    height: 0;
-
-    &:checked {
-      & + label {
-        color: blue;
-        border-color: blue;
-      }
-    }
-  }
-
-  > label {
-    padding: 5px;
-    border-bottom: 2px solid transparent;
-
-    &:hover {
-      color: blue;
-      cursor: pointer;
-    }
-  }
-`;
 
 const cardsDefault = [
   {
@@ -124,7 +98,7 @@ export default function WorkExample() {
           <div className="col-lg-6">
             <div className="filters">
               {filters.map((f) => (
-                <Filter key={`${f.label}_key`}>
+                <Link to='/Link' key={`${f.label}_key`}>
                   <input
                     id={f.label}
                     type="checkbox"
@@ -133,7 +107,7 @@ export default function WorkExample() {
                     checked={f.isChecked}
                   />
                   <label htmlFor={f.label}>{f.label}</label>
-                </Filter>
+                </Link>
               ))}
             </div>
           </div>
@@ -155,7 +129,7 @@ export default function WorkExample() {
                         <span>{c}</span>
                       ))}
                     </div> */}
-{console.log(card.img[0])}
+
                   <div className="relative">
                     <div className="thumb">
                       <div className="overlay overlay-bg"></div>
@@ -169,7 +143,7 @@ export default function WorkExample() {
                       <h4>{card.title}</h4>
                       <div className="cat">{card.project}</div>
                     </div>
-                    <Link href="/products" className="overlay"></Link>
+                    <Link to ="/products" className="overlay"></Link>
                   </div>
 
                  

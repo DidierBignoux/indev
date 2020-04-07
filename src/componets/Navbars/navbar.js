@@ -11,21 +11,21 @@ function MainNavbar() {
 				</div>
 				<nav id="nav-menu-container">
 					<ul className="nav-menu">
-						<li className=""><Link className="active" href="/products">Accueil</Link></li>
-						<li><Link href="/">About</Link></li>
-						<li><Link href="portfolio.html">Portfolio</Link></li>
-						<li className="menu-has-children"><Link href="#">Pages</Link>
+						<li className=""><Link className="active" to ="/products">Accueil</Link></li>
+						<li><Link to ="/about-me">About</Link></li>
+						<li><Link to ="portfolio.html">Portfolio</Link></li>
+						<li className="menu-has-children"><Link to ="#">Pages</Link>
 							<ul>
-								<li><Link href="elements.html">Elements</Link></li>
-								<li><Link href="contact.html">Contact</Link></li>
-								<li><Link href="services.html">Service</Link></li>
-								<li><Link href="portfolio-details.html">Portfolio Details</Link></li>
+								<li><Link to ="/">Elements</Link></li>
+								<li><Link to ="/">Contact</Link></li>
+								<li><Link to ="/">Service</Link></li>
+								<li><Link to ="/">Portfolio Details</Link></li>
 							</ul>
 						</li>
-						<li className="menu-has-children"><Link href="">Blog</Link>
+						<li className="menu-has-children"><Link to ="">Blog</Link>
 							<ul>
-								<li><Link href="blog-home.html">Blog Home</Link></li>
-								<li><Link href="blog-single.html">Blog Single</Link></li>
+								<li><Link to ="/">Blog Home</Link></li>
+								<li><Link to ="/">Blog Single</Link></li>
 							</ul>
 						</li>
 					</ul>
