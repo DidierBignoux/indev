@@ -10,7 +10,7 @@
     "animate.css": "^3.7.2",
     "gulp": "^4.0.2",
     "gulp-minify-css": "^1.2.4",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-isotope": "^1.0.7",
